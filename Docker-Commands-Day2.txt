@@ -1,0 +1,109 @@
+470  sudo mkdir java_docker_example
+  471  ls
+  472  cd java_docker_example/
+  473  sudo nano HelloWorld.java
+  474  sudo nano Dockerfile
+  475  docker build -t my-ditiss-java .
+  476  docker images
+  477  docker run my-ditiss-java
+  478  sudo nano HelloWorld.java
+  479  docker build -t my-ditiss-java .
+  480  sudo nano HelloWorld.java
+  481  docker build -t my-ditiss-java .
+  482  sudo nano HelloWorld.java
+  483  docker build -t my-ditiss-java .
+  484  docker run my-ditiss-java
+  485  java --version
+  486  java -version
+  487  docker login
+  488  docker tag my-ditiss-java devshridole/my-ditiss-java:1.8.0_442
+  489  docker push devshridole/my-ditiss-java:1.8.0_442
+
+=============================================================
+
+470  sudo mkdir docker_c_example
+  471  cd docker_c_example/
+  472  sudo nano user_input.c
+  473  sudo nano Dockerfile
+  474  docker build -t my-ditiss-c:1.0 .
+  475  docker run my-ditiss-c:1.0
+  476  docker run -it my-ditiss-c:1.0
+  477  docker login
+  478  docker tag my-ditiss-c:1.0 devshridole/my-ditiss-c:1.0
+  479  docker push devshridole/my-ditiss-c:1.0
+  480  docker save my-ditiss-c -o cprogback.tar
+  481  sudo docker save my-ditiss-c -o cprogback.tar
+
+==============================================================
+
+ 474  python3 --version
+  475  sudo mkdir docker_python_example
+  476  ls
+  477  cd docker_python_example 
+  478  sudo nano hello.py
+  479  sudo nano Dockerfile
+  480  docker build -t my-ditiss-python:3.10.12 .
+  481  sudo nano Dockerfile
+  482  docker build -t my-ditiss-python:3.10.12 .
+  483  docker run my-ditiss-python:3.10.12
+  484  sudo docker run my-ditiss-python:3.10.12
+  485  sudo nano Dockerfile
+  486  docker build -t my-ditiss-python:3.10.12 .
+  487  docker run my-ditiss-python:3.10.12
+  488  docker login
+  489  docker tag my-ditiss-python:3.10.12 devshridole/my-ditiss-python:3.10.12
+  490  docker push devshridole/my-ditiss-python:3.10.12
+
+==============================================================
+
+470  docker run -dit --rm --name tomcat-container 7777:8080 tomcat:8.0
+  471  docker run -dit --rm --name tomcat-container -p 7777:8080 tomcat:8.0
+  472  docker exec -it tomcat-container /bin/bash
+  473  docker stop tomcat-container
+  474  docker run -dit --name web5 -p 7777:80 httpd
+  475  docker run -dit --name web5 -p 7777:80 httpd httpd-foreground
+  476  sudo docker pull httpd
+  477  docker run -dit --name web5 -p 7777:80 httpd
+  478  docker run -dit --name web3 -p 7777:80 httpd
+  479  sudo nano index.html
+  480  docker cp index.html web3:/usr/local/apache2/htdocs/index.html
+  481  sudo nano index.html
+  482  docker cp index.html web3:/usr/local/apache2/htdocs/index.html
+
+==================================================================
+
+ 469  docker run -dit --name web5 -p 7777:80 httpd /usr/local/apache2/bin/httpd -D FOREGROUND
+  470  clear
+  471  docker network create my-network
+  472  docker container run --name mysql-container -v /data/mysql_data:/var/lib/mysql --network my-network -e MYSQL_ROOT_PASSWORD=pass -d mysql:latest
+  473  sudo docker pull mysql
+  474  docker container run --name mysql-container -v /data/mysql_data:/var/lib/mysql --network my-network -e MYSQL_ROOT_PASSWORD=pass -d mysql:latest
+  475  docker container run --name tomcat-container --network my-network -p 7777:8080 -v /data/mytomcat_data:/usr/local/tomcat/webapps -d tomcat:8
+  476  docker container run --name tomcat-container1 --network my-network -p 7777:8080 -v /data/mytomcat_data:/usr/local/tomcat/webapps -d tomcat:8
+  477  docker ps
+  478  docker stop web3
+  479  docker container run --name tomcat-container1 --network my-network -p 7777:8080 -v /data/mytomcat_data:/usr/local/tomcat/webapps -d tomcat:8
+  480  docker container run --name tomcat-container2 --network my-network -p 7777:8080 -v /data/mytomcat_data:/usr/local/tomcat/webapps -d tomcat:8
+  481  docker exec -it tomcat-container2 /bin/bash
+  482  docker exec -it mysql-container mysql -uroot -ppass
+  483  sudo mkdir docker_compose_demo
+  484  cd docker_compose_demo
+  485  sudo nano HelloWorld.java
+  486  sudo nano Dockerfile
+  487  sudo nano docker-compose.yml
+  488  docker compose up
+  489  cd ..
+  490  cd docker_compose_demo
+  491  docker info
+  492  docker swarm init
+  493  docker node ls
+  494  docker service create nginx
+  495  docker service ls
+  496  docker service update za --replicas 5
+  497  docker service ls
+  498  docker ps
+  499  docker stop 93804cec873c
+  500  docker rm 93804cec873c
+  501  docker service ls
+
+==============================================================

@@ -1,0 +1,79 @@
+          groups $USER
+  314  docker ps
+  315  docker
+  316  docker run ubuntu
+  317  docker container list
+  318  docker ps
+  319  cd ..
+  320  docker ps
+  321  docker run -it ubuntu
+  322  docker ps
+  323  docker run -dit ubuntu
+  324  docker ps
+  325  docker exec -it cd /bin/bash
+  326  docker ps
+  327  docker stop  gracious_davinci
+  328  docker ps
+  329  docker images
+  330  docker run -dit ubuntu
+  331  docker ps
+  332  dcker stop 40
+  333  docker stop 40
+  334  docker stop 9f
+  335  docker run -dit ubuntu
+  336  docker inspect ec
+  337  docker pull nginx
+  338  docker images
+  339  docker system df
+  340  docker run -dit --name=my-ubuntu ubuntu
+  341  docker run -dit --name=another-ubuntu ubuntu
+  342  docker ps
+  343  docker ps -a
+  344  docker ps -l
+  345  docker stop another-ubuntu
+  346  docker rm another-ubuntu
+  347  docker ps -a
+  348  docker ps
+  349  docker run -dit hello-world
+  350  docker logs f9
+  351  docker stop my-ubuntu
+  352  docker run --name my_nginx -d -p 8080:80 nginx
+  353  docker run -d -p 8888:80 tomcat:8
+  354  cd downloads
+  355  cd /Downloads
+  356  ls
+  357  cd /Downloads 
+  358  cd Downloads 
+  359  ls 
+  360  pwd
+  361  cd ..
+  362  docker import /home/sd/Downloads/ubuntu.tar ubuntu:latest
+  363  docker import /home/sd/Downloads/tomcat.tar tomcat:latest
+  364  cd Downloads
+  365  ls
+  366  pwd
+  367  cd ..
+  368  docker import /home/sd/Downloads/busybox.tar busybox:latest 
+  369  docker import /home/sd/Downloads/ httpd.tar httpd:latest 
+  370  docker import /home/sd/Downloads/httpd.tar httpd:latest 
+  371  docker import /home/sd/Downloads/nginx.tar nginx:latest
+  372  docker import /home/sd/Downloads/python.tar python:latest
+  373  docker import /home/sd/Downloads/mysql_8.tar mysql_8:latest
+  374  docker import /home/sd/Downloads/mysql.tar mysql:latest 
+  375  docker import /home/sd/Downloads/openjdk.tar openjdk:latest
+  376  docker import /home/sd/Downloads/mysql_8.tar mysql_8:8
+  377  docker volume create mysql-data mysql-data
+  378  docker volume create mysql-data
+  379  docker run -d --name my-mysql -e MYSQL_ROOT_pASSWORD=root123 -e MYSQL_DATABASE=cdac -v mysql-data:/var/lib/mysql -p 3306:3306 mysql:8
+  380  docker ps
+  381  docker rmi mysql:8
+  382  docker images
+  383  cd Downloads
+  384  ls
+  385  pwd
+  386  cd ..
+  387  docker import /home/sd/Downloads/mysql_8.tar mysql:8
+  388  docker images
+  389  docker run -d --name my-mysql -e MYSQL_ROOT_pASSWORD=root123 -e MYSQL_DATABASE=cdac -v mysql-data:/var/lib/mysql -p 3306:3306 mysql:8
+  390  docker load -i /home/sd/Downloads/mysql_8.tar mysql:8
+  391  docker run -d --name my-mysql -e MYSQL_ROOT_PASSWORD=root123 -e MYSQL_DATABASE=cdac -v mysql-data:/var/lib/mysql -p 3306:3306 mysql:8

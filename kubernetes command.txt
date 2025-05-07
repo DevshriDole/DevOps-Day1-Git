@@ -1,0 +1,64 @@
+kubectl run my-nginx --image nginx
+  312  kubectl get pods
+  313  kubectl create deployment my-nginx --image nginx
+  314  kubectl get pods
+  315  kubectl delete deploy my-nginx
+  316  kubectl delete pods my-nginx
+  317  kubectl get pods
+  318  kubectl get deploy
+  319  kubectl create deployment my-apache --image httpd
+  320  kubectl get deploy
+  321  kubectl get pod
+  322  kubectl scale deployment my-apache --replicas 5
+  323  kubectl get pod
+  324  kubectl get deploy
+  325* kubectl 
+  326  kubectl get pod
+  327  kubectl get pods
+  328  kubectl get rs
+  329  kubectl get pods
+  330  kubectl get rs
+  331  kubectl get pods
+  332  kubectl get rs
+  333  kubectl get pods
+  334  kubectl delete pod rs my-apache-5bd7979764-gsbcz 
+  335  kubectl delete  rs my-apache-5bd7979764-gsbcz 
+  336  kubectl delete  rs my-apache-5bd7979764-chfmc
+  337  kubectl get pods
+  338  kubectl delete  rs my-apache-5bd7979764
+  339  kubectl get rs
+  340  kubectl get pods
+  341  sudo mkdir ~/kuber_pod_demo
+  342  cd ~/kuber_pod_demo/
+  343  sudo nano nginx-pod-demo.yml
+  344  kubectl apply -f nginx-pod-demo.yml
+  345  sudo nano nginx-pod-demo.yml
+  346  kubectl apply -f nginx-pod-demo.yml
+  347  sudo nano nginx-pod-demo.yml
+  348  kubectl get pods
+  349  cd ..
+  350  mkdir ~/kubernetes_ex
+  351  cd ~/kubernetes_ex/
+  352  sudo nano index.jsp
+  353  sudo nano Dockerfile
+  354  sudo nano index.jsp
+  355  sudo nano tomcat_cdac.yml
+  356  docker build -t tomcat_cdac:1.0 .
+  357  sudo nano tomcat_cdac.yml
+  358  sudo nano Dockerfile
+  359  docker build -t tomcat_cdac:1.0   .
+  360  docker tag tomcat_cdac:1.0 shre28/tomcat_cdac:1.0
+  361  docker push shre28/tomcat_cdac:1.0
+  362  docker login
+  363  docker push shre28/tomcat_cdac:1.0
+  364  microk8s kubectl apply -f tomcat_cdac.yml
+  365  kubectl get pods
+  366  kubectl delete deploy 5894fb4f67
+  367  kubectl delete deploy 5894fb4f67-4fkvc
+  368  kubectl delete deployment 5894fb4f67
+  369  kubectl delete deployment tomcat-cdac
+  370  microk8s kubectl apply -f tomcat_cdac.yml
+  371  kubectl get pods
+  372  kubectl get services
+  373  curl localhost:30000
+  374  history
